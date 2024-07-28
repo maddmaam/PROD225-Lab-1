@@ -5,13 +5,13 @@
 
 #pragma once
 
-#include "../IntegerMacros.hpp"
+#include "../Hidden Treasure/IntegerMacros.hpp"
 
-class Player
+class OOPlayer
 {
 public:
-    Player();
-    ~Player();
+    OOPlayer();
+    ~OOPlayer();
 
     void PrintStats() const;
 private:

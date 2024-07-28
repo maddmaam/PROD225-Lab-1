@@ -1,10 +1,10 @@
 ﻿#include <iostream>
 #include <winerror.h>
-#include "Player.h"
+#include "OOPlayer.h"
 
 int main()
 {
-    Player CurrentPlayer;
+    OOPlayer CurrentPlayer;
     CurrentPlayer.PrintStats();
     CurrentPlayer.SetHealth(100);
     CurrentPlayer.SetExperience(85);
@@ -12,7 +12,7 @@ int main()
     std::cout << "Health: " << CurrentPlayer.GetHealth() << '\n';
     std::cout << "Experience: " << CurrentPlayer.GetExperience() << '\n';
     std::cout << "Power Up: " << CurrentPlayer.GetPowerUp() << '\n';
-    Player* PlayerPointer = new Player();
+    OOPlayer* PlayerPointer = new OOPlayer();
     PlayerPointer->SetHealth(999);
     PlayerPointer->SetExperience(-10);
     PlayerPointer->SetPowerUp(42);

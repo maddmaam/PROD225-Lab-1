@@ -21,6 +21,18 @@ struct FPosition
 	{
 		return x == OtherPosition.x && y == OtherPosition.y;
 	}
+
+	FPosition operator +(const FPosition& OtherPosition) const
+	{
+		return FPosition(x + OtherPosition.x, y + OtherPosition.y);
+	}
+
+	FPosition& operator+=(const FPosition& OtherPosition)
+	{
+		x += OtherPosition.x;
+		y += OtherPosition.y;
+		return *this;
+	}
 };
 
 enum class EMovementDirection : int8

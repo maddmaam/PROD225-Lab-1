@@ -1,50 +1,50 @@
 ﻿#include <iostream>
-#include "Player.h"
+#include "OOPlayer.h"
 
 
-Player::Player(): Health(10), ExperienceLevel(0), PowerUpLevel(0)
+OOPlayer::OOPlayer(): Health(10), ExperienceLevel(0), PowerUpLevel(0)
 {
     std::cout << "A Player object was created!" << '\n';
 }
 
-Player::~Player()
+OOPlayer::~OOPlayer()
 {
     std::cout << "A Player object was destroyed!" << '\n';
 }
 
-void Player::PrintStats() const
+void OOPlayer::PrintStats() const
 {
     std::cout << "Current Health: " << Health << '\n';
     std::cout << "Current Experience Level: " << ExperienceLevel << '\n';
     std::cout << "Current Power Up Level: " << PowerUpLevel << '\n';
 }
 
-void Player::SetHealth(const int32& NewHealth)
+void OOPlayer::SetHealth(const int32& NewHealth)
 {
     Health = NewHealth;
 }
 
-int32& Player::GetHealth()
+int32& OOPlayer::GetHealth()
 {
     return Health;
 }
 
-void Player::SetExperience(const int32& Experience)
+void OOPlayer::SetExperience(const int32& Experience)
 {
     ExperienceLevel = Experience;
 }
 
-int32& Player::GetExperience()
+int32& OOPlayer::GetExperience()
 {
     return ExperienceLevel;
 }
 
-void Player::SetPowerUp(const int32& PowerUp)
+void OOPlayer::SetPowerUp(const int32& PowerUp)
 {
     PowerUpLevel = PowerUp;
 }
 
-int32& Player::GetPowerUp()
+int32& OOPlayer::GetPowerUp()
 {
     return PowerUpLevel;
 }
